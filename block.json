@@ -1,0 +1,31 @@
+{
+	"apiVersion": 2,
+	"name": "agtech/section",
+	"title": "Section",
+	"category": "design",
+	"description": "AgTech section block",
+	"keywords": [ "container", "wrapper", "row", "section" ],
+	"supports": {
+		"align": [ "wide", "full" ],
+		"anchor": true,
+		"html": false,
+		"color": {
+			"gradients": true,
+			"link": true
+		},
+		"spacing": {
+			"padding": true
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"__experimentalLayout": true
+	},
+	"textdomain": "agtech-section",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
