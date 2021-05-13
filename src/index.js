@@ -1,22 +1,16 @@
 import { registerBlockType } from '@wordpress/blocks';
 import './style.scss';
 import Edit from './edit';
-import save from './save';
-import { group as icon } from '@wordpress/icons'
-
+import Save from './save';
+import { group as icon } from '@wordpress/icons';
 
 registerBlockType( 'agtech/agtech-section', {
+	apiVersion: 2,
 	title: 'Section',
 	icon,
 	supports: {
-		align: true
+		align: [ 'wide', 'full' ],
 	},
-	/**
-	 * @see ./edit.js
-	 */
-	 edit: Edit,
-	/**
-	 * @see ./save.js
-	 */
-	 save: save,
+	edit: Edit,
+	save: Save,
 } );

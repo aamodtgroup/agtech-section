@@ -1,15 +1,17 @@
-import { __ } from '@wordpress/i18n';
 import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 
+function Save() {
+	const blockProps = useBlockProps.save( {
+		className: 'wp-block-section',
+	} );
 
-function save() { 
 	return (
-		<section className="wp-block-section">
-			<div { ...useBlockProps.save( { className: 'wp-block-section__inner-content' } ) }>
+		<section { ...blockProps }>
+			<div className="wp-block-section__inner-container">
 				<InnerBlocks.Content />
 			</div>
 		</section>
 	);
 }
 
-export default save;
+export default Save;

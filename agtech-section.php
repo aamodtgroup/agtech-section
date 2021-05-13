@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Section
- * Description:       AgTech section block
+ * Plugin Name:       Custom Gutenberg Blocks
+ * Description:       Custom blocks made for the Gutenberg editor
  * Requires at least: 5.7
  * Requires PHP:      7.0
  * Version:           1.0.0
@@ -9,7 +9,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       agtech-section
  *
- * @package           agtech
+ * @package           create-block
  */
 
 /**
@@ -19,7 +19,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
-function agtech_agtech_section_block_init() {
+function create-block_block_init() {
 	register_block_type_from_metadata( __DIR__ );
 }
-add_action( 'init', 'agtech_agtech_section_block_init' );
+add_action( 'init', 'create-block_block_init' );
