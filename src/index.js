@@ -2,7 +2,8 @@ import { registerBlockType } from '@wordpress/blocks';
 import './style.scss';
 import Edit from './edit';
 import Save from './save';
-import icon from './icon';
+import { layout as icon } from '@wordpress/icons';
+
 
 registerBlockType( 'agtech/agtech-section', {
 	apiVersion: 2,
