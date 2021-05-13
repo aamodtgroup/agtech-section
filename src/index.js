@@ -5,8 +5,6 @@ import Save from './save';
 import { group as icon } from '@wordpress/icons';
 
 registerBlockType( 'agtech/agtech-section', {
-	apiVersion: 2,
-	title: 'Section',
 	icon,
 	supports: {
 		align: [ 'wide', 'full' ],
